@@ -1,0 +1,101 @@
+6:132  3:190  Found BIOS RSDP at F0000
+6:132  0:000  Printing ACPI tables from RSDP F0000 ...
+6:132  0:000   F0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+6:132  0:000    (Xsdt: DE645078, Rsdt: DE645028)
+6:132  0:000    DE645078: 'XSDT', 'A M I', Rev: 1, Len: 108
+6:132  0:000    DE645028: 'RSDT', 'A M I', Rev: 1, Len: 72
+6:132  0:000    Tables in Xsdt: 9
+6:132  0:000    0. DE64E748: 'FACP', 'A M I', Rev: 4, Len: 244
+6:132  0:000        (Dsdt: DE645170, Facs: DE7E4F80, XDsdt: DE645170, XFacs: 0)
+6:132  0:000        DE645170: 'DSDT', 'A M I', Rev: 2, Len: 38356
+6:132  0:000        DE7E4F80: 'FACS', Ver: 2, Len: 64
+6:132  0:000    1. DE64E840: 'APIC', 'A M I', Rev: 3, Len: 146
+6:132  0:000    2. DE64E8D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+6:132  0:000    3. DE64E918: 'HPET', 'A M I', Rev: 1, Len: 56
+6:132  0:000    4. DE64E950: 'SSDT', 'SataTabl', Rev: 1, Len: 877
+6:133  0:000    5. DE64ECC0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2474
+6:133  0:000    6. DE64F670: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+6:133  0:000    7. DE650108: 'DMAR', 'SNB', Rev: 1, Len: 120
+6:133  0:000    8. DE650180: 'BGRT', 'A M I', Rev: 0, Len: 56
+6:133  0:000    Tables in Rsdt: 9
+6:133  0:000    0. DE6450E8: 'FACP', 'A M I', Rev: 2, Len: 132
+6:133  0:000        (Dsdt: DE645170, Facs: DE7E4F40)
+6:133  0:000        DE645170: 'DSDT', 'A M I', Rev: 2, Len: 38356
+6:133  0:000        DE7E4F40: 'FACS', Ver: 0, Len: 64
+6:133  0:000    1. DE64E840: 'APIC', 'A M I', Rev: 3, Len: 146
+6:133  0:000    2. DE64E8D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+6:133  0:000    3. DE64E918: 'HPET', 'A M I', Rev: 1, Len: 56
+6:133  0:000    4. DE64E950: 'SSDT', 'SataTabl', Rev: 1, Len: 877
+6:133  0:000    5. DE64ECC0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2474
+6:133  0:000    6. DE64F670: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+6:133  0:000    7. DE650108: 'DMAR', 'SNB', Rev: 1, Len: 120
+6:133  0:000    8. DE650180: 'BGRT', 'A M I', Rev: 0, Len: 56
+6:133  0:000  Found UEFI Acpi 2.0 RSDP at DE645000
+6:133  0:000  Saving ACPI tables from RSDP DE645000 to EFI\CLOVER\ACPI\origin ...
+6:133  0:000   DE645000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+6:217  0:083    (Xsdt: DE645078, Rsdt: DE645028)
+6:217  0:000    DE645078: 'XSDT', 'A M I', Rev: 1, Len: 108 -> XSDT.aml
+6:259  0:041    DE645028: 'RSDT', 'A M I', Rev: 1, Len: 72 -> RSDT.aml
+6:301  0:041    Tables in Xsdt: 9
+6:301  0:000    0. DE64E748: 'FACP', 'A M I', Rev: 4, Len: 244 -> FACP.aml
+6:351  0:050        (Dsdt: DE645170, Facs: DE7E4F80, XDsdt: DE645170, XFacs: 0)
+6:351  0:000        DE645170: 'DSDT', 'A M I', Rev: 2, Len: 38356 -> DSDT.aml
+6:402  0:050        DE7E4F80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+6:451  0:049    1. DE64E840: 'APIC', 'A M I', Rev: 3, Len: 146 -> APIC.aml
+6:501  0:049    2. DE64E8D8: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+6:551  0:049    3. DE64E918: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+6:601  0:049    4. DE64E950: 'SSDT', 'SataTabl', Rev: 1, Len: 877 -> SSDT-0-SataTabl.aml
+6:651  0:049    5. DE64ECC0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2474 -> SSDT-1-Cpu0Ist.aml
+6:701  0:050    6. DE64F670: 'SSDT', 'CpuPm', Rev: 1, Len: 2706 -> SSDT-2-CpuPm.aml (Found hidden SSDT 4 pcs)
+6:763  0:062        * DC8C3018: 'SSDT', 'CpuPm', Rev: 1, Len: 2706  53 53 44 54 92 0A 00 00 01 4B 50 6D 52 65 66 00 Internal length = 2706 -> SSDT-x2_0-CpuPm.aml
+6:766  0:002        * DE653A98: 'SSDT', 'ApIst', Rev: 1, Len: 771  53 53 44 54 03 03 00 00 01 76 50 6D 52 65 66 00 Internal length = 771 -> SSDT-x2_1-ApIst.aml
+6:769  0:002        * DE652018: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 2107  53 53 44 54 3B 08 00 00 01 D8 50 6D 52 65 66 00 Internal length = 2107 -> SSDT-x2_2-Cpu0Cst.aml
+6:772  0:002        * DE66CC18: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 EC 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x2_3-ApCst.aml
+6:775  0:002  
+6:775  0:000    7. DE650108: 'DMAR', 'SNB', Rev: 1, Len: 120 -> DMAR.aml
+6:777  0:002    8. DE650180: 'BGRT', 'A M I', Rev: 0, Len: 56 -> BGRT.aml
+6:780  0:002    Tables in Rsdt: 9
+6:780  0:000    0. DE6450E8: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+6:783  0:002        (Dsdt: DE645170, Facs: DE7E4F40)
+6:783  0:000        DE645170: 'DSDT', 'A M I', Rev: 2, Len: 38356
+6:784  0:000        DE7E4F40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+6:786  0:002    1. DE64E840: 'APIC', 'A M I', Rev: 3, Len: 146
+6:786  0:000    2. DE64E8D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+6:786  0:000    3. DE64E918: 'HPET', 'A M I', Rev: 1, Len: 56
+6:786  0:000    4. DE64E950: 'SSDT', 'SataTabl', Rev: 1, Len: 877
+6:786  0:000    5. DE64ECC0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2474
+6:786  0:000    6. DE64F670: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+6:786  0:000    7. DE650108: 'DMAR', 'SNB', Rev: 1, Len: 120
+6:786  0:000    8. DE650180: 'BGRT', 'A M I', Rev: 0, Len: 56
+6:786  0:000  Found UEFI Acpi 1.0 RSDP at DE645000
+6:786  0:000  Printing ACPI tables from RSDP DE645000 ...
+6:786  0:000   DE645000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+6:786  0:000    (Xsdt: DE645078, Rsdt: DE645028)
+6:786  0:000    DE645078: 'XSDT', 'A M I', Rev: 1, Len: 108
+6:786  0:000    DE645028: 'RSDT', 'A M I', Rev: 1, Len: 72
+6:786  0:000    Tables in Xsdt: 9
+6:786  0:000    0. DE64E748: 'FACP', 'A M I', Rev: 4, Len: 244
+6:786  0:000        (Dsdt: DE645170, Facs: DE7E4F80, XDsdt: DE645170, XFacs: 0)
+6:786  0:000        DE645170: 'DSDT', 'A M I', Rev: 2, Len: 38356
+6:787  0:000        DE7E4F80: 'FACS', Ver: 2, Len: 64
+6:787  0:000    1. DE64E840: 'APIC', 'A M I', Rev: 3, Len: 146
+6:787  0:000    2. DE64E8D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+6:787  0:000    3. DE64E918: 'HPET', 'A M I', Rev: 1, Len: 56
+6:787  0:000    4. DE64E950: 'SSDT', 'SataTabl', Rev: 1, Len: 877
+6:787  0:000    5. DE64ECC0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2474
+6:787  0:000    6. DE64F670: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+6:787  0:000    7. DE650108: 'DMAR', 'SNB', Rev: 1, Len: 120
+6:787  0:000    8. DE650180: 'BGRT', 'A M I', Rev: 0, Len: 56
+6:787  0:000    Tables in Rsdt: 9
+6:787  0:000    0. DE6450E8: 'FACP', 'A M I', Rev: 2, Len: 132
+6:787  0:000        (Dsdt: DE645170, Facs: DE7E4F40)
+6:787  0:000        DE645170: 'DSDT', 'A M I', Rev: 2, Len: 38356
+6:788  0:000        DE7E4F40: 'FACS', Ver: 0, Len: 64
+6:788  0:000    1. DE64E840: 'APIC', 'A M I', Rev: 3, Len: 146
+6:788  0:000    2. DE64E8D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+6:788  0:000    3. DE64E918: 'HPET', 'A M I', Rev: 1, Len: 56
+6:788  0:000    4. DE64E950: 'SSDT', 'SataTabl', Rev: 1, Len: 877
+6:788  0:000    5. DE64ECC0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2474
+6:788  0:000    6. DE64F670: 'SSDT', 'CpuPm', Rev: 1, Len: 2706
+6:788  0:000    7. DE650108: 'DMAR', 'SNB', Rev: 1, Len: 120
+6:788  0:000    8. DE650180: 'BGRT', 'A M I', Rev: 0, Len: 56
